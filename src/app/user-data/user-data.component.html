@@ -1,0 +1,34 @@
+<h2>{{title}}</h2>
+<table class="table table-dark">
+  <tr *ngIf="User">
+    <th>Name</th>
+    <td>{{User.name}}</td>
+  </tr>
+  <tr *ngIf="User">
+    <th>Lastname</th>
+    <td>{{User.lastname}}</td>
+  </tr>
+  <tr *ngIf="User">
+    <th>Fiscalcode</th>
+    <td>{{User.fiscalcode}}</td>
+  </tr>
+  <tr *ngIf="User">
+    <th>Email</th>
+    <td>{{User.email}}</td>
+  </tr>
+  <tr *ngIf="User">
+    <th>Phone</th>
+    <td>{{User.phone}}</td>
+  </tr>
+  <tr *ngIf="User">
+    <th>Age</th>
+    <td>{{User.age}}</td>
+  </tr>
+  <tr *ngIf="User">
+    <th>Province</th>
+    <td>{{User.province}}</td>
+  </tr>
+  <tfoot>
+  <tr> <td colspan="2"><button class="btn btn-primary" (click)="backToUsers()">BACK</button></td> </tr>
+  </tfoot>
+</table>
